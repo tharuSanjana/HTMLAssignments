@@ -60,29 +60,58 @@
        aspect-ratio: 1/1;
        position: absolute;
        border-radius: 100%;
-       top: 0;
-       bottom: 0;
+      /* top: 0;
+       bottom: 0;*/
        left: 0;
        right: 0;
       margin: auto;
    }
 
     #mid1{
-        /*top: 0;
-        left: 0;
-        right: 0;
-        bottom: 90%;*/
+        top: 50vw;
         background-color: purple;
     }
 
    #mid2{
+       top: 100vw;
        background-color: blue;
    }
 
    #mid3{
+        top: 150vw;
        background-color: orangered;
    }
 
+   #mid1 h1 {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       margin: 0;
+       color: white;
+   }
+
+   #mid2 h1 {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       margin: 0;
+       color: white;
+       white-space: nowrap;
+   }
+
+
+   #mid3 h1 {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       margin: 0;
+       color: white;
+       text-align: center;
+       white-space: pre-line;
+   }
   </style>
 </head>
 <body>
@@ -90,8 +119,15 @@
 <div class="circle"></div>
 
 
-<div id="mid1" class="mid-circle"></div>
-<div id="mid2" class="mid-circle"></div>
-<div id="mid3" class="mid-circle"></div>
+<div id="mid1" class="mid-circle">
+    <h1>Hello</h1>
+</div>
+<div id="mid2" class="mid-circle">
+    <h1>Welcome To</h1>
+
+</div>
+<div id="mid3" class="mid-circle">
+    <h1>Institute<br>Of<br>Software<br>Engineering</h1>
+</div>
 </body>
 </html>
